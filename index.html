@@ -114,15 +114,30 @@ body {
   background: #3c4d6d;
 }
 </style>
-<body>
+<body onload="myFunction()">
     <div class="login-form">
         <h1>BTN710 Group 1 Artifacts</h1>
         <div class="content">
-            <ul><a href="/">Report</a></ul>
+            <ul><a href="BTN710 Deliverable 2 - Group 1.pdf" download>Report</a></ul>
             <ul><a href="/">Video</a></ul>
         </div>
     </div>
 
 </body>
-
+<script>
+  function myFunction()
+  {
+    var password = "btn710@G#";
+  var x = prompt("Enter in the password:");
+  console.log(x);
+  if (x == password) {
+    alert("Correct password!");
+  }
+  else {
+    location.reload();
+    alert("Wrong password!");
+    console.log(x);
+  }
+  }
+</script>
 </html>
